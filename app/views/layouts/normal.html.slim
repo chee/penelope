@@ -1,0 +1,12 @@
+doctype html
+head
+  meta charset="utf-8"
+  title Magharabeg Rural Community Association
+  = csrf_meta_tags
+  = stylesheet_link_tag "application", :media => "all"
+
+body
+  = render "partials/head"
+  = yield
+  = render "partials/footer"
+  = javascript_include_tag "application"
